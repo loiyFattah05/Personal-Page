@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description"
+    content="Personal home page for Loiy Abdul-Fattah — projects, coursework, and professional profiles." />
+
+  <title>Loiy Abdul-Fattah | Personal Home Page</title>
+
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Poppins:wght@700;800&display=swap");
+
+    :root {
+      --bg: #f7f7fb;
+      --card: #ffffff;
+      --text: #0f172a;
+      --muted: #475569;
+      --accent: #2563eb;
+      --ring: rgba(37, 99, 235, .15);
+      --shadow: 0 10px 30px rgba(2, 6, 23, .06);
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #0b1020;
+        --card: #0f172a;
+        --text: #e5e7eb;
+        --muted: #94a3b8;
+        --accent: #60a5fa;
+        --ring: rgba(96, 165, 250, .25);
+        --shadow: 0 10px 30px rgba(0, 0, 0, .4);
+      }
+    }
+
+    html,
+    body {
+      height: 100%;
+    }
+
+    body {
+      margin:80px;
+      font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      color: var(--text);
+      background: var(--bg);
+      line-height: 1.6;
+    }
+
+    .wrapper {
+      width: min(95%, 960px);
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 32px;
+    }
+
+    header {
+      margin: 12px 0 28px;
+    }
+
+    header .brand {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+    }
+
+    header .brandmark {
+      width: 56px;
+      height: 56px;
+      border-radius: 50%;
+      object-fit: cover;
+      box-shadow: var(--shadow);
+    }
+
+    h1 {
+      font-family: Poppins, Inter, sans-serif;
+      font-weight: 800;
+      font-size: clamp(1.75rem, 2.4vw + 1rem, 2.5rem);
+      letter-spacing: -0.02em;
+      margin: 0;
+    }
+
+    .tagline {
+      margin: 6px 0 0;
+      color: var(--muted);
+      font-size: .95rem;
+    }
+
+    main {
+      display: grid;
+      gap: 20px;
+    }
+
+    h2 {
+      font-family: Poppins, Inter, sans-serif;
+      font-weight: 700;
+      font-size: clamp(1.25rem, 1.2vw + 1rem, 1.6rem);
+      margin: 0;
+    }
+
+    .card {
+      background: var(--card);
+      border-radius: 16px;
+      padding: 18px 20px;
+      box-shadow: var(--shadow);
+      border: 1px solid rgba(0, 0, 0, .04);
+    }
+
+    p {
+      margin: 0 0 12px;
+    }
+
+    .actions {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+      margin-top: 4px;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 10px 14px;
+      border-radius: 999px;
+      border: 1px solid transparent;
+      text-decoration: none;
+      font-weight: 600;
+      transition: transform .06s ease, box-shadow .2s ease;
+    }
+
+    .btn:focus-visible {
+      outline: 3px solid var(--ring);
+      outline-offset: 3px;
+      box-shadow: 0 0 0 6px var(--ring);
+    }
+
+    .btn-primary {
+      background: var(--accent);
+      color: #fff;
+    }
+
+    .btn-ghost {
+      background: transparent;
+      border-color: currentColor;
+      color: var(--accent);
+    }
+
+    a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      margin-top: 28px;
+      padding-top: 16px;
+      border-top: 1px solid rgba(0, 0, 0, .08);
+      color: var(--muted);
+    }
+
+    .footer-nav {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    .footer-nav li {
+      display: inline;
+    }
+
+    .footer-nav li+li::before {
+      content: " ~ ";
+      color: var(--muted);
+    }
+
+    .legal {
+      margin-top: 10px;
+      font-size: .9rem;
+    }
+
+    .skip-link {
+      position: absolute;
+      left: -9999px;
+      top: auto;
+      width: 1px;
+      height: 1px;
+      overflow: hidden;
+    }
+
+    .skip-link:focus {
+      position: static;
+      width: auto;
+      height: auto;
+      padding: 8px 12px;
+      background: var(--card);
+      border-radius: 8px;
+      box-shadow: var(--shadow);
+    }
+  </style>
+
+  <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <header>
+    <div class="brand">
+      <img class="brandmark" src="itis3135/images/profile.jpg" alt="Portrait of Loiy Abdul-Fattah" loading="lazy" />
+      <div>
+        <h1>Loiy Abdul-Fattah</h1>
+        <p class="tagline">Computer Science Concentrating in Cyber Secuirty @ UNC Charlotte</p>
+      </div>
+    </div>
+  </header>
+
+  <main id="main" class="card">
+    <h2>Personal Home Page</h2>
+    <p>
+      Welcome! I am a CS student concentrating in Cyber Security going into my third year at UNCC.
+
+    </p>
+    <p>
+      This site is my hub: quick links to coursework, GitHub, and professional profiles.
+      It’s simple, fast, and accessible—so you can find what you need quickly!
+    </p>
+
+    <div class="actions">
+      <a class="btn btn-primary" href="mailto:labdulfa@charlotte.edu">Email Me</a>
+      <a class="btn btn-ghost" href="itis3135/components/Resume.pdf" target="_blank" rel="noopener">View Résumé
+        (PDF)</a>
+    </div>
+  </main>
+
+  <footer>
+    <nav aria-label="Footer navigation">
+      <ul class="footer-nav">
+        <li><a href="itis3135/">ITIS3135</a></li>
+        <li><a href="https://www.linkedin.com/in/loui-abdul-fattah-4b532b365/" target="_blank"
+            rel="noopener">LinkedIn</a></li>
+      </ul>
+    </nav>
+
+
+    <p>
+      Page built by
+      <a href="itis3135/fattahenterprises.com/index.html" target="_blank" rel="noopener">Fattah Enterprises</a>
+      &copy; 2025
+    </p>
+  </footer>
+
+</body>
+
+</html>
