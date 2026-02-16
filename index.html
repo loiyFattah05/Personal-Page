@@ -201,9 +201,42 @@
       border-radius: 8px;
       box-shadow: var(--shadow);
     }
+
+    .projects-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+  gap:16px;
+}
+.project-card{
+  border:1px solid #ddd;
+  border-radius:14px;
+  padding:16px;
+}
+.tags span{
+  display:inline-block;
+  border:1px solid #ccc;
+  border-radius:999px;
+  padding:4px 10px;
+  margin:8px 6px 0 0;
+  font-size:0.85rem;
+}
+.links a{
+  display:inline-block;
+  margin-right:12px;
+  margin-top:12px;
+  text-decoration:underline;
+}
+.skills-used{ margin-top:10px; }
+.tag{
+  display:inline-block;
+  border:1px solid #ccc;
+  border-radius:999px;
+  padding:4px 10px;
+  margin:6px 6px 0 6px;
+  font-size:0.85rem;
+}
   </style>
 
-  <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -220,12 +253,11 @@
   <main id="main" class="card">
     <h2>Personal Home Page</h2>
     <p>
-      Welcome! I am a CS student concentrating in Cyber Security going into my third year at UNCC.
+      Welcome! I am a CS student concentrating in Cyber Security finishing my third year at UNCC.
 
     </p>
     <p>
-      This site is my hub: quick links to coursework, GitHub, and professional profiles.
-      It’s simple, fast, and accessible—so you can find what you need quickly!
+      This site Serve as a main hub, you can find my linkedin, resume, personal project, GitHub, and contact information.
     </p>
 
     <div class="actions">
@@ -233,12 +265,35 @@
       <a class="btn btn-ghost" href="itis3135/components/Resume.pdf" target="_blank" rel="noopener">View Résumé
         (PDF)</a>
     </div>
+
+    <section id="projects">
+      <h2>Featured Projects</h2>
+    
+      <div class="projects-grid">
+        <article class="project-card">
+          <h3>PCO Client Site</h3>
+          <p>Multi-page org website with reusable components, events modal, and responsive layout.</p>
+          <div class="skills-used">
+            <strong>Skills used:</strong>
+            <span class="tag">HTML</span>
+            <span class="tag">CSS</span>
+            <span class="tag">JavaScript</span>
+          </div>
+          <div class="links">
+            <a href="https://loiyfattah05.github.io/PCO_Client_Site/" target="_blank">Live Demo</a>
+            <a href="https://github.com/loiyFattah05/PCO_Client_Site" target="_blank">Repo</a>
+          </div>
+        </article>
+    
+        <!-- Add more cards here -->
+      </div>
+    </section>
   </main>
 
   <footer>
     <nav aria-label="Footer navigation">
       <ul class="footer-nav">
-        <li><a href="itis3135/">ITIS3135</a></li>
+        <li><a href="https://github.com/loiyFattah05">GitHub</a></li>
         <li><a href="https://www.linkedin.com/in/loui-abdul-fattah-4b532b365/" target="_blank"
             rel="noopener">LinkedIn</a></li>
       </ul>
